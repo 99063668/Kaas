@@ -1,26 +1,47 @@
 var antwoord;
 
-antwoord = prompt("is de kaas geel?");
-// Antwoord is ja
-if (antwoord == "ja"){
-    document.write("De kleur is geel.<br>");
-    antwoord = prompt("Heeft de gaten?");
+antwoord=prompt("Is de kaas geel?");
 
-    if(antwoord == "ja"){
-        document.write("De kaas heeft gaten.<br>");
-        antwoord= prompt("Is de kaas belachelijk duur?");
+if(antwoord=="ja"){
+    antwoord=prompt("Zitten er gaten in?");
+    if(antwoord=="ja"){
+        antwoord=prompt("Is de kaas belachelijk duur?");
+        if(antwoord=="ja"){
+            document.write("Emmenthaler");
+        }
+        else{
+            document.write("Leerdammer");
+        }
     }
-        if(antwoord == "ja"){
-            document.write("De kaas is belachelijk duur.<br>");
-            document.write("Emmenthaler<br>.");
-          
-//Antwoord is nee
-}else{ 
-    document.write("De kaas is niet belachelijk duur.<br>");
-    document.write("Leerdammer.<br>");
-    }
+    else{
+        antwoord=prompt("Is de kaas hard als steen?");
+        if(antwoord=="ja"){
+            document.write("Pannigiano Reggiano");
+        } 
+        else{
+        document.write("Goudse kaas");
         
-    }else{
-        document.write("De kaas is hard als steen.<br>");
-        document.write("Pannigiano Reggiano?");    
+}
+}
+}else{
+    antwoord=prompt("Heeft de kaas blauwe schimmels?");
+    if(antwoord=="ja"){
+        antwoord=prompt("Heeft de kaas een korst?");
+        if(antwoord=="ja"){
+            document.write("Bleu de Rochbaron");
+        }
+        else{
+            document.write("Founne d'Ambert");
+
+        }
+    }
+    else{
+        antwoord=prompt("Heeft de kaas een korst?");
+        if(antwoord=="ja"){
+            document.write("Camembert");
+        }
+        else{
+            document.write("Mozzarella");
+        }
+        }
     }
